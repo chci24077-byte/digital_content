@@ -1,0 +1,293 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+  background: #fffaf7;
+  color: #383333;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.header {
+  background: white;
+  border-bottom: 1px solid #f1e5df;
+  padding: 18px 24px;
+}
+
+.header-inner {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 23px;
+  color: #ec8178;
+  margin: 0;
+}
+
+.header-button,
+.primary-button,
+.submit-button {
+  border: none;
+  background: #ee8b81;
+  color: white;
+  border-radius: 30px;
+  padding: 12px 24px;
+  font-weight: bold;
+}
+
+.header-button:hover,
+.primary-button:hover,
+.submit-button:hover {
+  background: #df7269;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 35px 20px;
+}
+
+.hero {
+  text-align: center;
+  background: #fff0e9;
+  border-radius: 25px;
+  padding: 60px 20px;
+  margin-bottom: 50px;
+}
+
+.hero-label {
+  color: #e58a7b;
+  font-weight: bold;
+}
+
+.hero h2 {
+  font-size: 36px;
+  line-height: 1.6;
+  margin: 15px 0;
+}
+
+.hero p {
+  line-height: 2;
+  color: #756b68;
+}
+
+.primary-button {
+  margin-top: 20px;
+  font-size: 16px;
+  padding: 15px 32px;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.section-heading h2 {
+  font-size: 24px;
+}
+
+.section-heading span {
+  color: #999;
+}
+
+.post-list {
+  display: grid;
+  gap: 20px;
+}
+
+.post-card {
+  background: white;
+  border: 1px solid #f2e4df;
+  border-radius: 18px;
+  padding: 25px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+}
+
+.post-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.anonymous {
+  color: #777;
+  font-size: 14px;
+}
+
+.post-time {
+  color: #aaa;
+  font-size: 13px;
+}
+
+.post-card h3 {
+  margin: 20px 0 10px;
+  font-size: 20px;
+}
+
+.post-content {
+  color: #666;
+  line-height: 1.9;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.tags {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.tag {
+  padding: 6px 13px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.industry-tag {
+  background: #fff0e1;
+  color: #d58b49;
+}
+
+.category-tag {
+  background: #fce8ee;
+  color: #d77d99;
+}
+
+.post-footer {
+  border-top: 1px solid #f4eeee;
+  margin-top: 20px;
+  padding-top: 18px;
+}
+
+.like-button {
+  border: none;
+  background: #fff0f0;
+  color: #e47777;
+  padding: 9px 17px;
+  border-radius: 20px;
+}
+
+.like-button:hover {
+  background: #ffe0e0;
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 100;
+}
+
+.modal {
+  background: white;
+  width: 100%;
+  max-width: 500px;
+  max-height: 90vh;
+  overflow-y: auto;
+  border-radius: 22px;
+  padding: 30px;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.modal-header h2 {
+  font-size: 22px;
+  margin: 0;
+}
+
+.close-button {
+  border: none;
+  background: none;
+  font-size: 28px;
+  color: #888;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+form label {
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+form input,
+form textarea,
+form select {
+  border: 1px solid #e4d9d5;
+  border-radius: 10px;
+  padding: 13px;
+  outline-color: #ee8b81;
+}
+
+.warning {
+  color: #aa7770;
+  background: #fff5f0;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.submit-button {
+  margin-top: 10px;
+  padding: 15px;
+}
+
+.footer {
+  text-align: center;
+  color: #aaa;
+  font-size: 13px;
+  padding: 40px;
+}
+
+@media (max-width: 600px) {
+  .logo {
+    font-size: 18px;
+  }
+
+  .header-button {
+    padding: 10px 15px;
+  }
+
+  .hero {
+    padding: 45px 20px;
+  }
+
+  .hero h2 {
+    font-size: 27px;
+  }
+
+  .post-card {
+    padding: 20px;
+  }
+}
